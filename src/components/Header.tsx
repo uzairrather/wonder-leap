@@ -10,7 +10,7 @@ export const Header: React.FC<HeaderProps> = ({ scrollToSection }) => {
 
   const handleScroll = (id: string) => {
     scrollToSection(id);
-    setMenuOpen(false); // Close menu on selection
+    setMenuOpen(false);
   };
 
   return (
@@ -18,8 +18,16 @@ export const Header: React.FC<HeaderProps> = ({ scrollToSection }) => {
       <div className="absolute inset-0 bg-gradient-to-r from-yellow-400/10 via-purple-500/10 to-yellow-400/10"></div>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 relative">
         <nav className="flex items-center justify-between">
-          {/* Logo */}
-          <div className="flex items-center space-x-3">
+          {/* Left: Hamburger + Logo */}
+          <div className="flex items-center space-x-4">
+            {/* Hamburger Button */}
+            <div className="md:hidden">
+              <button onClick={() => setMenuOpen(true)} className="text-yellow-300">
+                <Menu className="w-8 h-8" />
+              </button>
+            </div>
+
+            {/* Logo */}
             <div className="relative">
               <img
                 src="/IMG_3141[57].jpeg"
@@ -30,7 +38,7 @@ export const Header: React.FC<HeaderProps> = ({ scrollToSection }) => {
             </div>
           </div>
 
-          {/* Desktop Menu */}
+          {/* Desktop Nav */}
           <div className="hidden md:flex items-center space-x-6 lg:space-x-8">
             {['about', 'mission', 'challenge', 'founder', 'contact'].map((section) => (
               <button
@@ -51,44 +59,48 @@ export const Header: React.FC<HeaderProps> = ({ scrollToSection }) => {
               <div className="absolute inset-0 bg-gradient-to-r from-white/20 to-transparent rounded-full"></div>
             </button>
           </div>
-
-          {/* Mobile Hamburger */}
-          <div className="md:hidden">
-            <button onClick={() => setMenuOpen(true)} className="text-yellow-300">
-              <Menu className="w-8 h-8" />
-            </button>
-          </div>
         </nav>
       </div>
 
-      {/* Mobile Fullscreen Menu */}
+      {/* Fullscreen Mobile Menu */}
       {menuOpen && (
-        <div className="fixed inset-0 z-50 bg-gradient-to-br from-purple-900 via-indigo-900 to-purple-900 text-white px-6 py-8 pt-24 md:hidden">
+        <div className="fixed inset-0 z-50 bg-gradient-to-br from-purple-900 via-indigo-900 to-purple-900 backdrop-blur-xl md:hidden flex flex-col items-center justify-start pt-24 px-6">
           {/* Close Button */}
           <button
             onClick={() => setMenuOpen(false)}
-            className="absolute top-6 right-6 text-white hover:text-yellow-400 transition-all"
+            className="absolute top-6 right-6 text-white hover:text-yellow-400 transition"
           >
             <X className="w-8 h-8" />
           </button>
 
-          <div className="flex flex-col items-center space-y-6">
-            {['about', 'mission', 'challenge', 'founder', 'contact', 'signup'].map((section) => (
-              <button
-                key={section}
-                onClick={() => handleScroll(section)}
-                className="text-xl font-bold bg-purple-800 w-full text-center py-3 rounded-xl hover:bg-purple-700 transition-all duration-200"
+          {/* MENU BLOCK with background wrapper */}
+          <div className="w-full space-y-4 mt-4">
+            <div className="bg-purple-800/90 rounded-xl p-4 space-y-3 shadow-2xl">
+              {/* <button
+                className="text-xl font-extrabold text-yellow-300 bg-yellow-500/10 border border-yellow-400 w-full text-center py-3 rounded-xl"
+                disabled
               >
-                {section === 'signup' ? (
-                  <span className="flex justify-center items-center gap-2 text-yellow-300 font-bold">
-                    <Star className="w-5 h-5" />
-                    Get Notified
-                  </span>
-                ) : (
-                  section.charAt(0).toUpperCase() + section.slice(1)
-                )}
-              </button>
-            ))}
+              </button> */}
+
+              {['about', 'mission', 'challenge', 'founder', 'contact'].map((section) => (
+                <button
+                  key={section}
+                  onClick={() => handleScroll(section)}
+                  className="text-lg font-semibold bg-purple-700 w-full text-white py-3 rounded-xl hover:bg-purple-600 transition-all duration-200"
+                >
+                  {section.charAt(0).toUpperCase() + section.slice(1)}
+                </button>
+              ))}
+            </div>
+
+            {/* CTA */}
+            <button
+              onClick={() => handleScroll('signup')}
+              className="w-full flex justify-center items-center gap-2 bg-yellow-400 text-purple-900 font-bold py-3 rounded-full text-lg hover:bg-yellow-300 transition mt-6"
+            >
+              <Star className="w-5 h-5" />
+              Get Notified
+            </button>
           </div>
         </div>
       )}

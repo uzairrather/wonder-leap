@@ -1,12 +1,12 @@
 import React from 'react';
-import { Star, Heart, Sparkles, Zap, Crown, Gem, Diamond } from 'lucide-react';
+import { Star, Heart, Sparkles, Zap,  Gem, Diamond } from 'lucide-react';
 
 export const FloatingElements: React.FC = () => {
   return (
     <div className="absolute inset-0 overflow-hidden pointer-events-none">
       {/* Royal Floating Icons */}
       <div className="absolute top-20 left-10 animate-float">
-        <Crown className="w-8 h-8 text-yellow-400/40 drop-shadow-lg" />
+        <Star className="w-8 h-8 text-yellow-400/40 drop-shadow-lg" />
       </div>
       <div className="absolute top-40 right-20 animate-float" style={{ animationDelay: '1s' }}>
         <Gem className="w-6 h-6 text-purple-400/50 drop-shadow-lg" />

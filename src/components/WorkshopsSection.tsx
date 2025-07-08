@@ -9,10 +9,12 @@ const WorkshopsSection: React.FC = () => {
       id="workshops"
       className="py-20 bg-gradient-to-br from-purple-900 via-indigo-900 to-purple-900 relative overflow-hidden"
     >
-      <div className="absolute inset-0 bg-gradient-to-r from-yellow-400/5 via-purple-500/10 to-yellow-400/5"></div>
+      {/* Subtle background */}
+      <div className="absolute inset-0 bg-gradient-to-r from-yellow-400/5 via-purple-500/10 to-yellow-400/5 z-0" />
       <FloatingElements />
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        {/* Section Heading */}
         <AnimatedSection direction="up" className="text-center mb-16">
           <h2 className="text-5xl lg:text-6xl font-black text-transparent bg-gradient-to-r from-yellow-300 via-amber-400 to-yellow-300 bg-clip-text drop-shadow-2xl mb-8">
             Early Careers Exploration Workshops
@@ -20,7 +22,7 @@ const WorkshopsSection: React.FC = () => {
         </AnimatedSection>
 
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          {/* Left: Text Block */}
+          {/* Left: Description */}
           <AnimatedSection direction="left" delay={100}>
             <div className="bg-gradient-to-br from-purple-800/50 via-indigo-800/50 to-purple-800/50 backdrop-blur-2xl rounded-3xl p-10 border-4 border-yellow-400/30 shadow-2xl relative text-white/90 text-lg leading-relaxed font-medium text-left z-10">
               <div className="absolute inset-0 bg-gradient-to-r from-yellow-400/10 to-purple-500/10 rounded-3xl z-0"></div>
@@ -41,7 +43,7 @@ const WorkshopsSection: React.FC = () => {
             </div>
           </AnimatedSection>
 
-          {/* Right: Image */}
+          {/* Right: Image and Icons */}
           <AnimatedSection direction="right">
             <div className="relative">
               <div className="relative z-10 transform hover:scale-105 transition-all duration-500">
@@ -50,14 +52,15 @@ const WorkshopsSection: React.FC = () => {
                   alt="WonderLeap Workshops"
                   className="w-full max-w-md mx-auto rounded-3xl shadow-2xl border-4 border-yellow-400/50 filter brightness-110 contrast-110"
                 />
-                <div className="absolute inset-0 bg-gradient-to-r from-yellow-400/20 to-purple-500/20 rounded-3xl"></div>
+                <div className="absolute inset-0 bg-gradient-to-r from-yellow-400/20 to-purple-500/20 rounded-3xl" />
               </div>
-              <div className="absolute -inset-6 bg-gradient-to-r from-yellow-400/30 via-purple-500/30 to-yellow-400/30 rounded-3xl blur-2xl opacity-60 animate-pulse"></div>
 
-              {/* Badges */}
+              <div className="absolute -inset-6 bg-gradient-to-r from-yellow-400/30 via-purple-500/30 to-yellow-400/30 rounded-3xl blur-2xl opacity-60 animate-pulse" />
+
               <div className="absolute -top-4 -right-4 bg-gradient-to-r from-yellow-400 to-amber-500 text-purple-900 p-3 rounded-full shadow-xl animate-bounce border-2 border-yellow-300/50">
                 <Award className="w-6 h-6" />
               </div>
+
               <div className="absolute -bottom-4 -left-4 bg-gradient-to-r from-purple-500 to-indigo-500 text-yellow-300 p-3 rounded-full shadow-xl animate-bounce delay-300 border-2 border-purple-300/50">
                 <Star className="w-6 h-6" />
               </div>

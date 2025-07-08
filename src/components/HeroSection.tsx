@@ -89,7 +89,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
             <div className="relative">
               <div className="relative z-10 transform hover:scale-105 transition-all duration-500">
                 <img
-                  src="/IMG_3102 copy.jpeg"
+                  src="/IMG_3719.jpeg"
                   alt="Wonda the WonderLeap Explorer - WonderLeap Mascot"
                   className="w-full max-w-xs sm:max-w-md lg:max-w-lg mx-auto rounded-3xl shadow-2xl border-4 border-yellow-400/50 filter brightness-110 contrast-110"
                 />

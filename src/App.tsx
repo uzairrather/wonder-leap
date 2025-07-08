@@ -7,9 +7,10 @@ import { MissionSection } from './components/MissionSection';
 import { ChallengeSection } from './components/ChallengeSection';
 import { FounderSection } from './components/FounderSection';
 import WorkshopsSection from './components/WorkshopsSection';
+import WatchPlatformSection from './components/WatchPlatformSection';
 import { SignupSection } from './components/SignupSection';
 import { Footer } from './components/Footer';
-
+import EdTechPlatformSection from './components/EdTechPlatformSection';
 function App() {
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
@@ -28,6 +29,8 @@ function App() {
         <MissionSection />
         <ChallengeSection />
         <FounderSection />
+        <EdTechPlatformSection/>
+        <WatchPlatformSection /> 
         <WorkshopsSection />
         <SignupSection />
       </main>

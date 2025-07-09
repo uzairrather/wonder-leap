@@ -43,24 +43,24 @@ const WorkshopsSection: React.FC = () => {
             </div>
           </AnimatedSection>
 
-          {/* Right: Image and Icons */}
+          {/* Right: Two Images */}
           <AnimatedSection direction="right">
-            <div className="relative">
-              <div className="relative z-10 transform hover:scale-105 transition-all duration-500">
-                <img
-                  src="/school.jpeg"
-                  alt="WonderLeap Workshops"
-                  className="w-full max-w-md mx-auto rounded-3xl shadow-2xl border-4 border-yellow-400/50 filter brightness-110 contrast-110"
-                />
-                <div className="absolute inset-0 bg-gradient-to-r from-yellow-400/20 to-purple-500/20 rounded-3xl" />
-              </div>
-
-              <div className="absolute -inset-6 bg-gradient-to-r from-yellow-400/30 via-purple-500/30 to-yellow-400/30 rounded-3xl blur-2xl opacity-60 animate-pulse" />
-
+            <div className="relative grid grid-cols-1 sm:grid-cols-2 gap-6">
+              {['/workshop1.jpeg', '/workshop2.jpeg'].map((src, index) => (
+                <div key={index} className="relative">
+                  <img
+                    src={src}
+                    alt={`WonderLeap Workshop ${index + 1}`}
+                    className="w-full rounded-3xl shadow-2xl border-4 border-yellow-400/50 filter brightness-110 contrast-110"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-r from-yellow-400/20 to-purple-500/20 rounded-3xl" />
+                  <div className="absolute -inset-4 bg-gradient-to-r from-yellow-400/30 via-purple-500/30 to-yellow-400/30 rounded-3xl blur-2xl opacity-60 animate-pulse" />
+                </div>
+              ))}
+              {/* Floating Icons on last image */}
               <div className="absolute -top-4 -right-4 bg-gradient-to-r from-yellow-400 to-amber-500 text-purple-900 p-3 rounded-full shadow-xl animate-bounce border-2 border-yellow-300/50">
                 <Award className="w-6 h-6" />
               </div>
-
               <div className="absolute -bottom-4 -left-4 bg-gradient-to-r from-purple-500 to-indigo-500 text-yellow-300 p-3 rounded-full shadow-xl animate-bounce delay-300 border-2 border-purple-300/50">
                 <Star className="w-6 h-6" />
               </div>

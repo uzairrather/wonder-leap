@@ -16,7 +16,7 @@ export const FounderSection: React.FC = () => {
           <div className="inline-flex flex-wrap justify-center items-center gap-3 mb-6 sm:mb-8">
             <Star className="w-10 h-10 sm:w-12 sm:h-12 text-yellow-400" />
             <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black bg-gradient-to-r from-yellow-300 via-amber-400 to-yellow-300 bg-clip-text text-transparent drop-shadow-lg">
-              Meet Our Wonderleaf Founder
+              Meet Our Wonderleap Founder
             </h2>
             <Star className="w-10 h-10 sm:w-12 sm:h-12 text-yellow-400" />
           </div>

@@ -29,12 +29,12 @@ const WatchPlatformSection: React.FC = () => {
             <img
               src="/watch-1.jpeg"
               alt="WonderLeap Episode 1"
-              className="w-full h-auto rounded-3xl object-cover shadow-xl border-4 border-yellow-400/20"
+              className="w-full h-auto rounded-3xl object-cover  shadow-xl border-4 border-yellow-400/20"
             />
             <img
               src="/watch-2.jpeg"
               alt="WonderLeap Episode 2"
-              className="w-full h-auto rounded-3xl object-cover shadow-xl border-4 border-yellow-400/20"
+              className="w-full h-auto rounded-3xl object-cover mt-8 shadow-xl border-4 border-yellow-400/20"
             />
             <img
               src="/watch-3.jpeg"

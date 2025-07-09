@@ -46,7 +46,7 @@ const WorkshopsSection: React.FC = () => {
           {/* Right: Two Images */}
           <AnimatedSection direction="right">
             <div className="relative grid grid-cols-1 sm:grid-cols-2 gap-6">
-              {['/workshop1.jpeg', '/workshop2.jpeg'].map((src, index) => (
+              {['/school.jpeg', '/IMG_3710.jpeg'].map((src, index) => (
                 <div key={index} className="relative">
                   <img
                     src={src}

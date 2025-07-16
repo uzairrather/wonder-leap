@@ -18,7 +18,7 @@ export const Header: React.FC<HeaderProps> = ({ scrollToSection }) => {
     { id: 'challenge', label: 'Challenge' },
     { id: 'founder', label: 'Founder' },
     { id: 'edtech', label: 'EdTech Platform' },
-    { id: 'watch', label: 'Watch Platform' },
+    { id: 'watch', label: 'Curious Minds' },
     { id: 'workshops', label: 'WonderLeap Workshops' },
     { id: 'contact', label: 'Contact' },
   ];

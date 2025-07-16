@@ -54,7 +54,7 @@ export const HighlightsSection: React.FC = () => {
         {/* Section Header */}
         <AnimatedSection direction="up" className="text-center mb-12 sm:mb-16">
           <h2 className="text-4xl sm:text-5xl font-black text-transparent bg-gradient-to-r from-yellow-300 via-amber-400 to-yellow-300 bg-clip-text drop-shadow-lg mb-4">
-            Inspiring curiosity through a wide range of professions
+            Inspiring curiosity 
           </h2>
           <p className="text-white/90 text-lg sm:text-xl font-medium max-w-3xl mx-auto">
             Built to inspire curiosity and creativity in every child.

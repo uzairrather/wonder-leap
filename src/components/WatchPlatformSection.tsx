@@ -16,10 +16,10 @@ const WatchPlatformSection: React.FC = () => {
         {/* Heading */}
         <AnimatedSection direction="up" className="text-center mb-16">
           <h2 className="text-5xl lg:text-6xl font-black text-transparent bg-gradient-to-r from-yellow-300 via-amber-400 to-yellow-300 bg-clip-text drop-shadow-2xl mb-6">
-            Watch Platform
+            Inspiring curiosity through a wide range of professions
           </h2>
           <p className="text-lg text-white/80 max-w-3xl mx-auto">
-            Explore WonderLeap stories, adventures, and educational series through our immersive Watch Platform. Built to inspire curiosity and creativity in every child.
+             Built to inspire curiosity and creativity in every child.
           </p>
         </AnimatedSection>
 

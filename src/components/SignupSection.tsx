@@ -21,7 +21,10 @@ export const SignupSection: React.FC = () => {
   const mailtoLink = `mailto:hello@wonderleap.co.uk?subject=${subject}&body=${body}`;
 
   return (
-    <section id="signup" className="py-20 bg-gradient-to-br from-purple-900 via-indigo-900 to-purple-900 relative overflow-hidden">
+    <section
+      id="signup"
+      className="py-20 bg-gradient-to-br from-purple-900 via-indigo-900 to-purple-900 relative overflow-hidden"
+    >
       <div className="absolute inset-0 bg-gradient-to-r from-yellow-400/5 via-purple-500/10 to-yellow-400/5"></div>
       <FloatingElements />
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative">
@@ -32,7 +35,9 @@ export const SignupSection: React.FC = () => {
               <div className="inline-flex items-center space-x-4 bg-gradient-to-r from-yellow-400 via-amber-500 to-yellow-400 text-purple-900 px-12 py-6 rounded-full font-black text-2xl shadow-2xl mb-8 border-4 border-yellow-300/50 relative">
                 <div className="absolute inset-0 bg-gradient-to-r from-white/30 to-transparent rounded-full"></div>
                 <Crown className="w-8 h-8 animate-bounce relative z-10" />
-                <span className="relative z-10">WONDERLEAP LAUNCH APPROACHING!</span>
+                <span className="relative z-10">
+                  WONDERLEAP LAUNCH APPROACHING!
+                </span>
                 <Gem className="w-8 h-8 animate-bounce relative z-10" />
               </div>
             </div>
@@ -41,11 +46,15 @@ export const SignupSection: React.FC = () => {
               Join WonderLeap!
             </h2>
             <p className="text-2xl text-white/95 mb-8 leading-relaxed font-semibold drop-shadow-lg relative z-10">
-              Be the first to meet Wonda, explore our Wonder Kingdoms, and unlock a future of possibilities.
+              Be the first to meet Wonda, explore our Wonder Kingdoms, and
+              unlock a future of possibilities.
             </p>
 
             {!isSubscribed ? (
-              <form onSubmit={handleSubmit} className="max-w-md mx-auto relative z-10">
+              <form
+                onSubmit={handleSubmit}
+                className="max-w-md mx-auto relative z-10"
+              >
                 <div className="flex flex-col sm:flex-row gap-4">
                   <input
                     type="email"
@@ -85,9 +94,15 @@ export const SignupSection: React.FC = () => {
               <div className="max-w-md mx-auto relative z-10">
                 <div className="bg-gradient-to-r from-emerald-600/30 via-teal-600/30 to-emerald-600/30 border-4 border-emerald-400/50 rounded-3xl p-8 backdrop-blur-2xl">
                   <CheckCircle className="w-16 h-16 text-emerald-400 mx-auto mb-6 animate-bounce" />
-                  <h3 className="text-3xl font-black text-white mb-4">Welcome to WonderLeap!</h3>
+                  <h3 className="text-3xl font-black text-white mb-4">
+                    <span className="inline-block leading-[1.2]">
+                      Welcome to WonderLeap!
+                    </span>
+                  </h3>
+
                   <p className="text-white/95 text-xl font-semibold">
-                    Your invitation has been sent! We'll notify you as soon as WonderLeap's kingdom opens.
+                    Your invitation has been sent! We'll notify you as soon as
+                    WonderLeap's kingdom opens.
                   </p>
                 </div>
               </div>
@@ -96,8 +111,12 @@ export const SignupSection: React.FC = () => {
             {showEmailChoice && (
               <div className="fixed inset-0 bg-black/60 z-50 flex items-center justify-center">
                 <div className="bg-white p-6 rounded-xl shadow-2xl text-center max-w-sm w-full space-y-4">
-                  <h2 className="text-xl font-bold text-purple-800">Choose how to send</h2>
-                  <p className="text-gray-600">Select your preferred email app</p>
+                  <h2 className="text-xl font-bold text-purple-800">
+                    Choose how to send
+                  </h2>
+                  <p className="text-gray-600">
+                    Select your preferred email app
+                  </p>
                   <div className="flex flex-col gap-3">
                     <button
                       onClick={() => {

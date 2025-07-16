@@ -1,7 +1,7 @@
-import React from 'react';
-import { AnimatedSection } from './AnimatedSection';
-import { Star, Award } from 'lucide-react';
-import { FloatingElements } from './FloatingElements';
+import React from "react";
+import { AnimatedSection } from "./AnimatedSection";
+import { Star, Award } from "lucide-react";
+import { FloatingElements } from "./FloatingElements";
 
 const WorkshopsSection: React.FC = () => {
   return (
@@ -16,8 +16,10 @@ const WorkshopsSection: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Section Heading */}
         <AnimatedSection direction="up" className="text-center mb-16">
-          <h2 className="text-5xl lg:text-6xl font-black text-transparent bg-gradient-to-r from-yellow-300 via-amber-400 to-yellow-300 bg-clip-text drop-shadow-2xl mb-8">
-            Early Careers Exploration Workshops
+          <h2 className="text-5xl lg:text-6xl font-black drop-shadow-2xl mb-8">
+            <span className="inline-block bg-gradient-to-r from-yellow-300 via-amber-400 to-yellow-300 bg-clip-text text-transparent leading-[1.15]">
+              Early Careers Exploration Workshops
+            </span>
           </h2>
         </AnimatedSection>
 
@@ -28,16 +30,29 @@ const WorkshopsSection: React.FC = () => {
               <div className="absolute inset-0 bg-gradient-to-r from-yellow-400/10 to-purple-500/10 rounded-3xl z-0"></div>
               <div className="relative z-10 space-y-5">
                 <p>
-                  <strong>WonderLeap Workshops for Primary Schools</strong> step into the world of WonderLeap and meet Wonda, the brave and curious mascot guiding every adventure.
+                  <strong>WonderLeap Workshops for Primary Schools</strong> step
+                  into the world of WonderLeap and meet Wonda, the brave and
+                  curious mascot guiding every adventure.
                 </p>
                 <p>
-                  These immersive, interactive workshops invite children to join Wonda and the Explorers on a magical journey of early career discovery. Through hands-on activities, creative challenges, games, and playful storytelling, pupils get to experience what it’s like to step into different roles from engineers to artists and beyond.
+                  These immersive, interactive workshops invite children to join
+                  Wonda and the Explorers on a magical journey of early career
+                  discovery. Through hands-on activities, creative challenges,
+                  games, and playful storytelling, pupils get to experience what
+                  it’s like to step into different roles from engineers to
+                  artists and beyond.
                 </p>
                 <p>
-                  Children build key skills like teamwork, problem-solving, and self-confidence while expanding their imaginations and learning about the world of work in a fun, safe, and inspiring environment.
+                  Children build key skills like teamwork, problem-solving, and
+                  self-confidence while expanding their imaginations and
+                  learning about the world of work in a fun, safe, and inspiring
+                  environment.
                 </p>
                 <p>
-                  With opportunities to meet Wonda, take part in themed quests, and earn special Explorer badges, WonderLeap workshops create unforgettable moments that ignite lifelong curiosity and help every child imagine a future full of possibilities.
+                  With opportunities to meet Wonda, take part in themed quests,
+                  and earn special Explorer badges, WonderLeap workshops create
+                  unforgettable moments that ignite lifelong curiosity and help
+                  every child imagine a future full of possibilities.
                 </p>
               </div>
             </div>
@@ -46,7 +61,7 @@ const WorkshopsSection: React.FC = () => {
           {/* Right: Two Images */}
           <AnimatedSection direction="right">
             <div className="relative grid grid-cols-1 sm:grid-cols-2 gap-6">
-              {['/school.jpeg', '/IMG_3710.jpeg'].map((src, index) => (
+              {["/school.jpeg", "/IMG_3710.jpeg"].map((src, index) => (
                 <div key={index} className="relative">
                   <img
                     src={src}

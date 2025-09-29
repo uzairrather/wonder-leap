@@ -29,13 +29,13 @@ export const ChallengeSection: React.FC = () => {
             <div className="absolute inset-0 bg-gradient-to-r from-white/20 to-transparent rounded-full"></div>
             <AlertTriangle className="w-8 h-8 relative z-10" />
             <span className="relative z-10">
-              WONDERLEAP DECREE: URGENT CHALL
+              WONDERLEAP DECREE: URGENT CHALLENGE
             </span>
             <AlertTriangle className="w-8 h-8 relative z-10" />
           </div>
           <h2 className="text-5xl lg:text-6xl font-black mb-8 drop-shadow-lg">
             <span className="inline-block bg-gradient-to-r from-red-400 via-orange-400 to-yellow-400 bg-clip-text text-transparent leading-[1.15]">
-              The Challenge We're Conquering
+              The Challenge We're Conque
             </span>
           </h2>
 

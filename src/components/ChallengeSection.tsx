@@ -35,7 +35,7 @@ export const ChallengeSection: React.FC = () => {
           </div>
           <h2 className="text-5xl lg:text-6xl font-black mb-8 drop-shadow-lg">
             <span className="inline-block bg-gradient-to-r from-red-400 via-orange-400 to-yellow-400 bg-clip-text text-transparent leading-[1.15]">
-               Challenge We're Conquer
+               Challenge We're 
             </span>
           </h2>
 
